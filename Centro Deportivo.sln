@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentroDeportivo", "CentroDeportivo\CentroDeportivo.csproj", "{4BFBB9A8-0DA0-4748-90A0-E57547FD8153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "centroDeportivosTests", "centroDeportivosTests\centroDeportivosTests.csproj", "{20D9050F-BBFE-4091-BA6C-FF716BC946EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BFBB9A8-0DA0-4748-90A0-E57547FD8153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BFBB9A8-0DA0-4748-90A0-E57547FD8153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFBB9A8-0DA0-4748-90A0-E57547FD8153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BFBB9A8-0DA0-4748-90A0-E57547FD8153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D9050F-BBFE-4091-BA6C-FF716BC946EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D9050F-BBFE-4091-BA6C-FF716BC946EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D9050F-BBFE-4091-BA6C-FF716BC946EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D9050F-BBFE-4091-BA6C-FF716BC946EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAC47502-D8E2-4BB2-AFFC-4097DD638D10}
+	EndGlobalSection
+EndGlobal

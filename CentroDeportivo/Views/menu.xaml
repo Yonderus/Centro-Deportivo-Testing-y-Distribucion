@@ -1,0 +1,16 @@
+﻿<Window x:Class="CentroDeportivo.Views.menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CentroDeportivo.Views"
+        mc:Ignorable="d"
+        Title="menu" Height="400" Width="500">
+    <Grid Background="#FFEDEBEB">
+        <Label x:Name="lblTitulo" Content="Centro Deportivo Bocairent" HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="18"/>
+        <Button x:Name="btbSocio" Command="{Binding AbrirSocio }" Content="Socios" HorizontalAlignment="Center" VerticalAlignment="Top" Height="52" Width="236" FontFamily="MS Gothic" FontWeight="Bold" FontSize="16" Background="#FFD5CEFF" Margin="0,140,0,0"/>
+        <Button x:Name="btbActividades" Content="Actividades" Command="{Binding AbrirActividades}" HorizontalAlignment="Center" VerticalAlignment="Top" Height="52" Width="236" FontFamily="MS Gothic" FontWeight="Bold" FontSize="16" Background="#FFD5CEFF" Margin="0,217,0,0"/>
+        <Button x:Name="btbReservas" Content="Reservas" Command="{Binding AbrirReservas}" HorizontalAlignment="Center" VerticalAlignment="Top" Height="52" Width="236" FontFamily="MS Gothic" FontWeight="Bold" FontSize="16" Background="#FFD5CEFF" Margin="0,296,0,0"/>
+
+    </Grid>
+</Window>
