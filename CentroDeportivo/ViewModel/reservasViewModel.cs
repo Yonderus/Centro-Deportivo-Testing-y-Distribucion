@@ -9,6 +9,9 @@ using System.Windows.Input;
 
 namespace CentroDeportivo.ViewModel
 {
+    /// <summary>
+    /// ViewModel para gestionar reservas (selecciones de socio/actividad y fecha).
+    /// </summary>
     public class ReservasViewModel : INotifyPropertyChanged
     {
         private readonly ReservasRepositorio _repoReservas = new ReservasRepositorio();
@@ -16,16 +19,31 @@ namespace CentroDeportivo.ViewModel
         private readonly ActividadesRepositorio _repoActividades = new ActividadesRepositorio();
 
         private ObservableCollection<Reservas> _reservas = new ObservableCollection<Reservas>();
+
+        /// <summary>
+        /// Lista de reservas mostrada en la vista.
+        /// </summary>
         public ObservableCollection<Reservas> Reservas
         {
             get => _reservas;
             set { _reservas = value; OnPropertyChanged(nameof(Reservas)); }
         }
 
+        /// <summary>
+        /// Lista de socios (normalmente solo activos) para el desplegable.
+        /// </summary>
         public ObservableCollection<Socios> Socios { get; private set; } = new ObservableCollection<Socios>();
+
+        /// <summary>
+        /// Lista de actividades para el desplegable.
+        /// </summary>
         public ObservableCollection<Actividades> Actividades { get; private set; } = new ObservableCollection<Actividades>();
 
         private int _id;
+
+        /// <summary>
+        /// Id de la reserva (se usa al editar).
+        /// </summary>
         public int Id
         {
             get => _id;
@@ -33,6 +51,10 @@ namespace CentroDeportivo.ViewModel
         }
 
         private Socios _socioSeleccionado;
+
+        /// <summary>
+        /// Socio elegido para la reserva.
+        /// </summary>
         public Socios SocioSeleccionado
         {
             get => _socioSeleccionado;
@@ -40,6 +62,10 @@ namespace CentroDeportivo.ViewModel
         }
 
         private Actividades _actividadSeleccionada;
+
+        /// <summary>
+        /// Actividad elegida para la reserva.
+        /// </summary>
         public Actividades ActividadSeleccionada
         {
             get => _actividadSeleccionada;
@@ -47,6 +73,10 @@ namespace CentroDeportivo.ViewModel
         }
 
         private DateTime _fecha = DateTime.Today;
+
+        /// <summary>
+        /// Fecha de la reserva.
+        /// </summary>
         public DateTime Fecha
         {
             get => _fecha;
@@ -54,6 +84,10 @@ namespace CentroDeportivo.ViewModel
         }
 
         private Reservas _seleccionada;
+
+        /// <summary>
+        /// Reserva seleccionada en la tabla; al cambiar, rellena el formulario.
+        /// </summary>
         public Reservas Seleccionada
         {
             get => _seleccionada;
@@ -72,12 +106,34 @@ namespace CentroDeportivo.ViewModel
             }
         }
 
+        /// <summary>
+        /// Recarga socios, actividades y reservas.
+        /// </summary>
         public ICommand CargarCommand { get; }
+
+        /// <summary>
+        /// Crea una reserva nueva con los datos del formulario.
+        /// </summary>
         public ICommand InsertarCommand { get; }
+
+        /// <summary>
+        /// Guarda los cambios de la reserva seleccionada.
+        /// </summary>
         public ICommand EditarCommand { get; }
+
+        /// <summary>
+        /// Elimina la reserva seleccionada.
+        /// </summary>
         public ICommand EliminarCommand { get; }
+
+        /// <summary>
+        /// Limpia el formulario y quita la selección.
+        /// </summary>
         public ICommand LimpiarCommand { get; }
 
+        /// <summary>
+        /// Inicializa comandos y carga los datos iniciales.
+        /// </summary>
         public ReservasViewModel()
         {
             CargarCommand = new RelayCommand(Cargar);
@@ -177,7 +233,6 @@ namespace CentroDeportivo.ViewModel
                 return false;
             }
 
-            // Validación aforo: reservas de esa actividad en ese día
             int reservasDia = Reservas.Count(r =>
                 r.ActividadId == ActividadSeleccionada.Id &&
                 r.Fecha.Date == Fecha.Date &&
@@ -202,7 +257,11 @@ namespace CentroDeportivo.ViewModel
             Fecha = DateTime.Today;
         }
 
+        /// <summary>
+        /// Se dispara cuando cambia una propiedad para refrescar la vista.
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+
         private void OnPropertyChanged(string prop) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
     }

@@ -6,14 +6,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using CentroDeportivo.Views;
+
 namespace CentroDeportivo.ViewModel
 {
+    /// <summary>
+    /// ViewModel principal del menú: abre las distintas ventanas.
+    /// </summary>
     public class MainViewModel : INotifyPropertyChanged
     {
+        /// <summary>
+        /// Abre la ventana de socios.
+        /// </summary>
         public ICommand AbrirSocio { get; }
+
+        /// <summary>
+        /// Abre la ventana de actividades.
+        /// </summary>
         public ICommand AbrirActividades { get; }
+
+        /// <summary>
+        /// Abre la ventana de reservas.
+        /// </summary>
         public ICommand AbrirReservas { get; }
 
+        /// <summary>
+        /// Inicializa los comandos del menú.
+        /// </summary>
         public MainViewModel()
         {
             AbrirSocio = new RelayCommand(AbrirVentanaSocio);
@@ -39,8 +57,12 @@ namespace CentroDeportivo.ViewModel
             winR.ShowDialog();
         }
 
+        /// <summary>
+        /// Se dispara cuando cambia una propiedad para refrescar la vista.
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+
         protected void OnPropertyChanged(string name) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-    }   
+    }
 }

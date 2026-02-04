@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['editarcommand_0',['EditarCommand',['../class_centro_deportivo_1_1_view_model_1_1_actividades_view_model.html#afdd3033160481ccd700d279093944fe0',1,'CentroDeportivo.ViewModel.ActividadesViewModel.EditarCommand'],['../class_centro_deportivo_1_1_view_model_1_1_reservas_view_model.html#affd1274434a697659c042ac0f7d147d0',1,'CentroDeportivo.ViewModel.ReservasViewModel.EditarCommand'],['../class_centro_deportivo_1_1_view_model_1_1_socios_view_model.html#a60834a3d667f174ae55f0f8f3e3f8e09',1,'CentroDeportivo.ViewModel.SociosViewModel.EditarCommand']]],
+  ['eliminarcommand_1',['EliminarCommand',['../class_centro_deportivo_1_1_view_model_1_1_actividades_view_model.html#a413fb0ca3c9e90dbb442cc1da55bea8b',1,'CentroDeportivo.ViewModel.ActividadesViewModel.EliminarCommand'],['../class_centro_deportivo_1_1_view_model_1_1_reservas_view_model.html#a52e785b07fb87a84f199c9608d12d101',1,'CentroDeportivo.ViewModel.ReservasViewModel.EliminarCommand'],['../class_centro_deportivo_1_1_view_model_1_1_socios_view_model.html#a42de1a25e8b3d630394af0a7d64debb3',1,'CentroDeportivo.ViewModel.SociosViewModel.EliminarCommand']]],
+  ['email_2',['Email',['../class_centro_deportivo_1_1_view_model_1_1_socios_view_model.html#aad6fb9a040979170bfe7acba442b05d3',1,'CentroDeportivo::ViewModel::SociosViewModel']]]
+];

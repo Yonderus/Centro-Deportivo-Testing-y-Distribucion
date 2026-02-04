@@ -1,0 +1,66 @@
+\doxysection{Centro\+Deportivo.\+View\+Model.\+Actividades\+View\+Model Class Reference}
+\hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model}{}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model}\index{CentroDeportivo.ViewModel.ActividadesViewModel@{CentroDeportivo.ViewModel.ActividadesViewModel}}
+
+
+\doxylink{namespace_centro_deportivo_1_1_view_model}{View\+Model} para gestionar el listado de actividades y el formulario de edición.  
+
+
+Inheritance diagram for Centro\+Deportivo.\+View\+Model.\+Actividades\+View\+Model:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a96b9689230e69851b3cf021ff664699b}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a96b9689230e69851b3cf021ff664699b} 
+{\bfseries Actividades\+View\+Model} ()
+\begin{DoxyCompactList}\small\item\em Inicializa los comandos y carga los datos iniciales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_ae1c57e9e28dbee16b5850fca7f939ffc}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_ae1c57e9e28dbee16b5850fca7f939ffc} 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_centro_deportivo_1_1_actividades}{Actividades}} $>$ {\bfseries Lista}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Lista mostrada en la vista. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a387498dc07e7c97346066c1d72791434}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a387498dc07e7c97346066c1d72791434} 
+int {\bfseries Id}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Id de la actividad (se usa al editar). \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a070a3856a2707cbd26d2d86ad1cb176d}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a070a3856a2707cbd26d2d86ad1cb176d} 
+string {\bfseries Nombre}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Nombre de la actividad en el formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a6d1ed6d603df27800cc7118727265e51}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a6d1ed6d603df27800cc7118727265e51} 
+int {\bfseries Aforo\+Maximo}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Aforo máximo de la actividad en el formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a28e28ff52e193ac169001af27b59d07a}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a28e28ff52e193ac169001af27b59d07a} 
+\doxymbox{\hyperlink{class_centro_deportivo_1_1_actividades}{Actividades}} {\bfseries Seleccionada}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Actividad seleccionada en la tabla; al cambiar, rellena el formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a883f9ef243a8930b71237e60dd9c9b2e}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a883f9ef243a8930b71237e60dd9c9b2e} 
+ICommand {\bfseries Cargar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Carga/\+re\+Carga la lista desde la base de datos. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a1ba6883306d57d3a57d8290e41273200}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a1ba6883306d57d3a57d8290e41273200} 
+ICommand {\bfseries Insertar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Crea una actividad nueva con los datos del formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_afdd3033160481ccd700d279093944fe0}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_afdd3033160481ccd700d279093944fe0} 
+ICommand {\bfseries Editar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Guarda los cambios de la actividad seleccionada. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a413fb0ca3c9e90dbb442cc1da55bea8b}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a413fb0ca3c9e90dbb442cc1da55bea8b} 
+ICommand {\bfseries Eliminar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Elimina la actividad seleccionada. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a927b0db2fce72b705ffada68588b52b0}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a927b0db2fce72b705ffada68588b52b0} 
+ICommand {\bfseries Limpiar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Limpia el formulario y quita la selección. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a1e2a80f552116f7eb601e929aed831b7}\label{class_centro_deportivo_1_1_view_model_1_1_actividades_view_model_a1e2a80f552116f7eb601e929aed831b7} 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Se dispara cuando cambia una propiedad para refrescar la vista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_centro_deportivo_1_1_view_model}{View\+Model} para gestionar el listado de actividades y el formulario de edición. 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+D:\+/\+2do\+DAM/\+\+Desenvolupament d\textquotesingle{}\+Interficies/\+\+Actividad2\+\_\+\+MVVM-\/master/\+\+Centro\+Deportivo/\+\+View\+Model/\+actividades\+View\+Model.\+cs\end{DoxyCompactItemize}

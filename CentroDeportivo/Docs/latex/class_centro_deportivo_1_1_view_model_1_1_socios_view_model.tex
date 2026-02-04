@@ -1,0 +1,69 @@
+\doxysection{Centro\+Deportivo.\+View\+Model.\+Socios\+View\+Model Class Reference}
+\hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model}{}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model}\index{CentroDeportivo.ViewModel.SociosViewModel@{CentroDeportivo.ViewModel.SociosViewModel}}
+
+
+\doxylink{namespace_centro_deportivo_1_1_view_model}{View\+Model} para gestionar socios (listado y formulario).  
+
+
+Inheritance diagram for Centro\+Deportivo.\+View\+Model.\+Socios\+View\+Model:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_centro_deportivo_1_1_view_model_1_1_socios_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a92c4ac5d57484093118ef51f6bedf34e}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a92c4ac5d57484093118ef51f6bedf34e} 
+{\bfseries Socios\+View\+Model} ()
+\begin{DoxyCompactList}\small\item\em Inicializa comandos y carga los datos iniciales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_af25abe6d178f424a7989887adeacb774}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_af25abe6d178f424a7989887adeacb774} 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_centro_deportivo_1_1_socios}{Socios}} $>$ {\bfseries Lista}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Lista de socios mostrada en la vista. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a5644b8a9df0b3c931fbd7c211aeefa0f}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a5644b8a9df0b3c931fbd7c211aeefa0f} 
+int {\bfseries Id}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Id del socio (se usa al editar). \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a48901583f7c533fee779f04dc89e3fc3}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a48901583f7c533fee779f04dc89e3fc3} 
+string {\bfseries Nombre}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Nombre del socio en el formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_aad6fb9a040979170bfe7acba442b05d3}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_aad6fb9a040979170bfe7acba442b05d3} 
+string {\bfseries Email}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Email del socio en el formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_ab1a77c201e1c76cc968ef009260142ce}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_ab1a77c201e1c76cc968ef009260142ce} 
+bool {\bfseries Activo}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Indica si el socio está activo. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_ac368b57f472e9679a48c123a98af66a8}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_ac368b57f472e9679a48c123a98af66a8} 
+\doxymbox{\hyperlink{class_centro_deportivo_1_1_socios}{Socios}} {\bfseries Seleccionado}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Socio seleccionado en la tabla; al cambiar, rellena el formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_ad868fbe37c07b024d7604e70e82a994b}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_ad868fbe37c07b024d7604e70e82a994b} 
+ICommand {\bfseries Cargar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Recarga socios desde la base de datos. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_afcdd432578420ebb248899a88ae9c663}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_afcdd432578420ebb248899a88ae9c663} 
+ICommand {\bfseries Insertar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Crea un socio nuevo con los datos del formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a60834a3d667f174ae55f0f8f3e3f8e09}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a60834a3d667f174ae55f0f8f3e3f8e09} 
+ICommand {\bfseries Editar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Guarda los cambios del socio seleccionado. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a42de1a25e8b3d630394af0a7d64debb3}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a42de1a25e8b3d630394af0a7d64debb3} 
+ICommand {\bfseries Eliminar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Elimina el socio seleccionado. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_aa4ae855b569cc2cd457eb36e5e6ec5ee}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_aa4ae855b569cc2cd457eb36e5e6ec5ee} 
+ICommand {\bfseries Limpiar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Limpia el formulario y quita la selección. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a1761d2c2c43fe2e9ebc142bef79d155e}\label{class_centro_deportivo_1_1_view_model_1_1_socios_view_model_a1761d2c2c43fe2e9ebc142bef79d155e} 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Se dispara cuando cambia una propiedad para refrescar la vista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_centro_deportivo_1_1_view_model}{View\+Model} para gestionar socios (listado y formulario). 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+D:\+/\+2do\+DAM/\+\+Desenvolupament d\textquotesingle{}\+Interficies/\+\+Actividad2\+\_\+\+MVVM-\/master/\+\+Centro\+Deportivo/\+\+View\+Model/\+socios\+View\+Model.\+cs\end{DoxyCompactItemize}

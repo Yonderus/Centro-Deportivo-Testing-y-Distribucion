@@ -5,8 +5,14 @@ using System.Text.RegularExpressions;
 
 namespace CentroDeportivo.Model.Repositorios
 {
+    /// <summary>
+    /// Acceso a datos de socios y validaciones básicas relacionadas.
+    /// </summary>
     public class SociosRepositorio
     {
+        /// <summary>
+        /// Devuelve la lista completa de socios.
+        /// </summary>
         public List<Socios> ObtenerSocios()
         {
             using (var db = new CentroDeportivoEntities())
@@ -15,6 +21,10 @@ namespace CentroDeportivo.Model.Repositorios
             }
         }
 
+        /// <summary>
+        /// Inserta un nuevo socio (validando el email).
+        /// </summary>
+        /// <param name="socio">Socio a insertar.</param>
         public void Insertar(Socios socio)
         {
             if (socio == null) throw new ArgumentNullException(nameof(socio));
@@ -31,6 +41,10 @@ namespace CentroDeportivo.Model.Repositorios
             }
         }
 
+        /// <summary>
+        /// Elimina el socio indicado por id.
+        /// </summary>
+        /// <param name="id">Id del socio.</param>
         public void Eliminar(int id)
         {
             using (var db = new CentroDeportivoEntities())
@@ -42,6 +56,10 @@ namespace CentroDeportivo.Model.Repositorios
             }
         }
 
+        /// <summary>
+        /// Actualiza los datos del socio.
+        /// </summary>
+        /// <param name="socio">Datos nuevos del socio.</param>
         public void Editar(Socios socio)
         {
             using (var db = new CentroDeportivoEntities())
@@ -56,6 +74,11 @@ namespace CentroDeportivo.Model.Repositorios
                 db.SaveChanges();
             }
         }
+
+        /// <summary>
+        /// Comprueba si un email tiene un formato válido.
+        /// </summary>
+        /// <param name="email">Email a validar.</param>
         public bool EmailValido(string email)
         {
             if (string.IsNullOrWhiteSpace(email)) return false;

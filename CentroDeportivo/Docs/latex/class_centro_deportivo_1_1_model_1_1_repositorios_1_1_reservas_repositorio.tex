@@ -1,0 +1,132 @@
+\doxysection{Centro\+Deportivo.\+Model.\+Repositorios.\+Reservas\+Repositorio Class Reference}
+\hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio}{}\label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio}\index{CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}}
+
+
+Acceso a datos de reservas y pequeñas utilidades (fecha/\+aforo).  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac57f633164be916e3b6c0234fa8582d1}\label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac57f633164be916e3b6c0234fa8582d1} 
+List$<$ \doxymbox{\hyperlink{class_centro_deportivo_1_1_reservas}{Reservas}} $>$ {\bfseries Obtener\+Reservas} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la lista completa de reservas. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_a97d2a1fc2be544b8a55fddf0a94b0bc8}{Insertar}} (\doxymbox{\hyperlink{class_centro_deportivo_1_1_reservas}{Reservas}} reserva)
+\begin{DoxyCompactList}\small\item\em Guarda una nueva reserva. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_a0f05fe7bb502a24fb285ddeefaf9684f}{Editar}} (\doxymbox{\hyperlink{class_centro_deportivo_1_1_reservas}{Reservas}} reserva)
+\begin{DoxyCompactList}\small\item\em Actualiza una reserva existente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_aea3af1df193940da735464c0092dfd17}{Eliminar}} (int id)
+\begin{DoxyCompactList}\small\item\em Elimina la reserva indicada por id. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ad3dc2c2a7f94e651d30c1a3b362803f4}{Contar\+Reservas\+Actividad\+Dia}} (int actividad\+Id, Date\+Time fecha)
+\begin{DoxyCompactList}\small\item\em Cuenta cuántas reservas hay para una actividad en un día concreto. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac43f8f8b7b79270451d8c948f7186cbe}{Fecha\+Actual\+Disponible}} (Date\+Time fecha)
+\begin{DoxyCompactList}\small\item\em Indica si la fecha es hoy o posterior. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac2c01444a8fd09b46bce83d19f2edaca}{Puede\+Crear\+Otra\+Reserva}} (int aforo\+Maximo, int reservas\+Existentes)
+\begin{DoxyCompactList}\small\item\em Indica si se puede crear otra reserva según el aforo y las reservas ya existentes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Acceso a datos de reservas y pequeñas utilidades (fecha/\+aforo). 
+
+\label{doc-func-members}
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ad3dc2c2a7f94e651d30c1a3b362803f4}\index{CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}!ContarReservasActividadDia@{ContarReservasActividadDia}}
+\index{ContarReservasActividadDia@{ContarReservasActividadDia}!CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}}
+\doxysubsubsection{\texorpdfstring{ContarReservasActividadDia()}{ContarReservasActividadDia()}}
+{\footnotesize\ttfamily \label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ad3dc2c2a7f94e651d30c1a3b362803f4} 
+int Centro\+Deportivo.\+Model.\+Repositorios.\+Reservas\+Repositorio.\+Contar\+Reservas\+Actividad\+Dia (\begin{DoxyParamCaption}\item[{int}]{actividad\+Id}{, }\item[{Date\+Time}]{fecha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cuenta cuántas reservas hay para una actividad en un día concreto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actividad\+Id} & Id de la actividad.\\
+\hline
+{\em fecha} & Día a comprobar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_a0f05fe7bb502a24fb285ddeefaf9684f}\index{CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}!Editar@{Editar}}
+\index{Editar@{Editar}!CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}}
+\doxysubsubsection{\texorpdfstring{Editar()}{Editar()}}
+{\footnotesize\ttfamily \label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_a0f05fe7bb502a24fb285ddeefaf9684f} 
+void Centro\+Deportivo.\+Model.\+Repositorios.\+Reservas\+Repositorio.\+Editar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_centro_deportivo_1_1_reservas}{Reservas}}}]{reserva}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza una reserva existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reserva} & Datos nuevos de la reserva.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_aea3af1df193940da735464c0092dfd17}\index{CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}!Eliminar@{Eliminar}}
+\index{Eliminar@{Eliminar}!CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}}
+\doxysubsubsection{\texorpdfstring{Eliminar()}{Eliminar()}}
+{\footnotesize\ttfamily \label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_aea3af1df193940da735464c0092dfd17} 
+void Centro\+Deportivo.\+Model.\+Repositorios.\+Reservas\+Repositorio.\+Eliminar (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina la reserva indicada por id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id de la reserva.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac43f8f8b7b79270451d8c948f7186cbe}\index{CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}!FechaActualDisponible@{FechaActualDisponible}}
+\index{FechaActualDisponible@{FechaActualDisponible}!CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}}
+\doxysubsubsection{\texorpdfstring{FechaActualDisponible()}{FechaActualDisponible()}}
+{\footnotesize\ttfamily \label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac43f8f8b7b79270451d8c948f7186cbe} 
+bool Centro\+Deportivo.\+Model.\+Repositorios.\+Reservas\+Repositorio.\+Fecha\+Actual\+Disponible (\begin{DoxyParamCaption}\item[{Date\+Time}]{fecha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indica si la fecha es hoy o posterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fecha} & Fecha a comprobar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_a97d2a1fc2be544b8a55fddf0a94b0bc8}\index{CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}!Insertar@{Insertar}}
+\index{Insertar@{Insertar}!CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}}
+\doxysubsubsection{\texorpdfstring{Insertar()}{Insertar()}}
+{\footnotesize\ttfamily \label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_a97d2a1fc2be544b8a55fddf0a94b0bc8} 
+void Centro\+Deportivo.\+Model.\+Repositorios.\+Reservas\+Repositorio.\+Insertar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_centro_deportivo_1_1_reservas}{Reservas}}}]{reserva}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Guarda una nueva reserva. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reserva} & Reserva a insertar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac2c01444a8fd09b46bce83d19f2edaca}\index{CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}!PuedeCrearOtraReserva@{PuedeCrearOtraReserva}}
+\index{PuedeCrearOtraReserva@{PuedeCrearOtraReserva}!CentroDeportivo.Model.Repositorios.ReservasRepositorio@{CentroDeportivo.Model.Repositorios.ReservasRepositorio}}
+\doxysubsubsection{\texorpdfstring{PuedeCrearOtraReserva()}{PuedeCrearOtraReserva()}}
+{\footnotesize\ttfamily \label{class_centro_deportivo_1_1_model_1_1_repositorios_1_1_reservas_repositorio_ac2c01444a8fd09b46bce83d19f2edaca} 
+bool Centro\+Deportivo.\+Model.\+Repositorios.\+Reservas\+Repositorio.\+Puede\+Crear\+Otra\+Reserva (\begin{DoxyParamCaption}\item[{int}]{aforo\+Maximo}{, }\item[{int}]{reservas\+Existentes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indica si se puede crear otra reserva según el aforo y las reservas ya existentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aforo\+Maximo} & Aforo máximo permitido.\\
+\hline
+{\em reservas\+Existentes} & \doxylink{class_centro_deportivo_1_1_reservas}{Reservas} ya realizadas.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+D:\+/\+2do\+DAM/\+\+Desenvolupament d\textquotesingle{}\+Interficies/\+\+Actividad2\+\_\+\+MVVM-\/master/\+\+Centro\+Deportivo/\+\+Model/\+\+Repositorios/\+Reservas\+Repositorio.\+cs\end{DoxyCompactItemize}

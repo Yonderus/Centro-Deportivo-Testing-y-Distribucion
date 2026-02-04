@@ -1,0 +1,75 @@
+\doxysection{Centro\+Deportivo.\+View\+Model.\+Reservas\+View\+Model Class Reference}
+\hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model}{}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model}\index{CentroDeportivo.ViewModel.ReservasViewModel@{CentroDeportivo.ViewModel.ReservasViewModel}}
+
+
+\doxylink{namespace_centro_deportivo_1_1_view_model}{View\+Model} para gestionar reservas (selecciones de socio/\+actividad y fecha).  
+
+
+Inheritance diagram for Centro\+Deportivo.\+View\+Model.\+Reservas\+View\+Model:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_ad64212cac97c16913f63832ee96ef4f1}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_ad64212cac97c16913f63832ee96ef4f1} 
+{\bfseries Reservas\+View\+Model} ()
+\begin{DoxyCompactList}\small\item\em Inicializa comandos y carga los datos iniciales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a24b9e0c0d663052243770ea0f1419c71}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a24b9e0c0d663052243770ea0f1419c71} 
+Observable\+Collection$<$ Reservas $>$ {\bfseries Reservas}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Lista de reservas mostrada en la vista. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a6a4ad85c8c7cb01042e1c2622131d817}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a6a4ad85c8c7cb01042e1c2622131d817} 
+Observable\+Collection$<$ Socios $>$ {\bfseries Socios} = new Observable\+Collection$<$Socios$>$()\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Lista de socios (normalmente solo activos) para el desplegable. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_ae2903ba662be460ec2841daf0d50f9df}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_ae2903ba662be460ec2841daf0d50f9df} 
+Observable\+Collection$<$ Actividades $>$ {\bfseries Actividades} = new Observable\+Collection$<$Actividades$>$()\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Lista de actividades para el desplegable. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a39c0cebaaa32c466d9a20dc9b97ea113}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a39c0cebaaa32c466d9a20dc9b97ea113} 
+int {\bfseries Id}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Id de la reserva (se usa al editar). \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a4bd1dc48cfbfce8d3491fc7db0b3eab7}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a4bd1dc48cfbfce8d3491fc7db0b3eab7} 
+\doxymbox{\hyperlink{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a6a4ad85c8c7cb01042e1c2622131d817}{Socios}} {\bfseries Socio\+Seleccionado}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Socio elegido para la reserva. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a92328dc6fc0430121978fd751a775ef9}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a92328dc6fc0430121978fd751a775ef9} 
+\doxymbox{\hyperlink{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_ae2903ba662be460ec2841daf0d50f9df}{Actividades}} {\bfseries Actividad\+Seleccionada}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Actividad elegida para la reserva. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a0e687a413d02d21cccf267bc4181cc33}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a0e687a413d02d21cccf267bc4181cc33} 
+Date\+Time {\bfseries Fecha}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Fecha de la reserva. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a0bc720a252cc9362bc9a23ffbe032d5a}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a0bc720a252cc9362bc9a23ffbe032d5a} 
+\doxymbox{\hyperlink{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a24b9e0c0d663052243770ea0f1419c71}{Reservas}} {\bfseries Seleccionada}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Reserva seleccionada en la tabla; al cambiar, rellena el formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_ab8565c325a800f8d65927dd8928b0f23}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_ab8565c325a800f8d65927dd8928b0f23} 
+ICommand {\bfseries Cargar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Recarga socios, actividades y reservas. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a2df5442de50f36111eba82a5480e7226}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a2df5442de50f36111eba82a5480e7226} 
+ICommand {\bfseries Insertar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Crea una reserva nueva con los datos del formulario. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_affd1274434a697659c042ac0f7d147d0}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_affd1274434a697659c042ac0f7d147d0} 
+ICommand {\bfseries Editar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Guarda los cambios de la reserva seleccionada. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a52e785b07fb87a84f199c9608d12d101}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a52e785b07fb87a84f199c9608d12d101} 
+ICommand {\bfseries Eliminar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Elimina la reserva seleccionada. \end{DoxyCompactList}\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a82f85cf5593fc3b559504d86f37b2dc3}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a82f85cf5593fc3b559504d86f37b2dc3} 
+ICommand {\bfseries Limpiar\+Command}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Limpia el formulario y quita la selección. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a932b7ab7c4470d8828331c04f9ee424c}\label{class_centro_deportivo_1_1_view_model_1_1_reservas_view_model_a932b7ab7c4470d8828331c04f9ee424c} 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Se dispara cuando cambia una propiedad para refrescar la vista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_centro_deportivo_1_1_view_model}{View\+Model} para gestionar reservas (selecciones de socio/\+actividad y fecha). 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+D:\+/\+2do\+DAM/\+\+Desenvolupament d\textquotesingle{}\+Interficies/\+\+Actividad2\+\_\+\+MVVM-\/master/\+\+Centro\+Deportivo/\+\+View\+Model/\+reservas\+View\+Model.\+cs\end{DoxyCompactItemize}

@@ -8,11 +8,18 @@ using System.Windows.Input;
 
 namespace CentroDeportivo.ViewModel
 {
+    /// <summary>
+    /// ViewModel para gestionar el listado de actividades y el formulario de edición.
+    /// </summary>
     public class ActividadesViewModel : INotifyPropertyChanged
     {
         private readonly ActividadesRepositorio _repo = new ActividadesRepositorio();
 
         private ObservableCollection<Actividades> _lista = new ObservableCollection<Actividades>();
+
+        /// <summary>
+        /// Lista mostrada en la vista.
+        /// </summary>
         public ObservableCollection<Actividades> Lista
         {
             get => _lista;
@@ -23,18 +30,27 @@ namespace CentroDeportivo.ViewModel
         private string _nombre;
         private int _aforoMaximo = 10;
 
+        /// <summary>
+        /// Id de la actividad (se usa al editar).
+        /// </summary>
         public int Id
         {
             get => _id;
             set { _id = value; OnPropertyChanged(nameof(Id)); }
         }
 
+        /// <summary>
+        /// Nombre de la actividad en el formulario.
+        /// </summary>
         public string Nombre
         {
             get => _nombre;
             set { _nombre = value; OnPropertyChanged(nameof(Nombre)); }
         }
 
+        /// <summary>
+        /// Aforo máximo de la actividad en el formulario.
+        /// </summary>
         public int AforoMaximo
         {
             get => _aforoMaximo;
@@ -42,6 +58,10 @@ namespace CentroDeportivo.ViewModel
         }
 
         private Actividades _seleccionada;
+
+        /// <summary>
+        /// Actividad seleccionada en la tabla; al cambiar, rellena el formulario.
+        /// </summary>
         public Actividades Seleccionada
         {
             get => _seleccionada;
@@ -59,12 +79,34 @@ namespace CentroDeportivo.ViewModel
             }
         }
 
+        /// <summary>
+        /// Carga/reCarga la lista desde la base de datos.
+        /// </summary>
         public ICommand CargarCommand { get; }
+
+        /// <summary>
+        /// Crea una actividad nueva con los datos del formulario.
+        /// </summary>
         public ICommand InsertarCommand { get; }
+
+        /// <summary>
+        /// Guarda los cambios de la actividad seleccionada.
+        /// </summary>
         public ICommand EditarCommand { get; }
+
+        /// <summary>
+        /// Elimina la actividad seleccionada.
+        /// </summary>
         public ICommand EliminarCommand { get; }
+
+        /// <summary>
+        /// Limpia el formulario y quita la selección.
+        /// </summary>
         public ICommand LimpiarCommand { get; }
 
+        /// <summary>
+        /// Inicializa los comandos y carga los datos iniciales.
+        /// </summary>
         public ActividadesViewModel()
         {
             CargarCommand = new RelayCommand(Cargar);
@@ -82,9 +124,9 @@ namespace CentroDeportivo.ViewModel
             {
                 Lista = new ObservableCollection<Actividades>(_repo.ObtenerActividades());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Error cargando actividades" );
+                MessageBox.Show("Error cargando actividades");
                 Lista = new ObservableCollection<Actividades>();
             }
         }
@@ -162,7 +204,11 @@ namespace CentroDeportivo.ViewModel
             AforoMaximo = 10;
         }
 
+        /// <summary>
+        /// Se dispara cuando cambia una propiedad para refrescar la vista.
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+
         private void OnPropertyChanged(string prop) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
     }
