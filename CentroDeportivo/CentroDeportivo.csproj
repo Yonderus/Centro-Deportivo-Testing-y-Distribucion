@@ -190,6 +190,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Screenshots\actividades_cp.png" />
+    <Resource Include="Screenshots\reservas_cp.png" />
+    <Resource Include="Screenshots\socios_cp.png" />
+    <Resource Include="Screenshots\inicio_menu.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -226,7 +230,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Docs\" />
-    <Folder Include="Screenshots\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
